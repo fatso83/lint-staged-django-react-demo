@@ -27,7 +27,7 @@
     "eslint-plugin-babel": "^3.1.0",
     "eslint-plugin-react": "^3.11.3",
     "expose-loader": "^0.7.1",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.8.5",
     "font-awesome": "^4.5.0",
     "husky": "^0.14.3",
@@ -37,7 +37,7 @@
     "rimraf": "^2.4.3",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.14"
+    "webpack": "2"
   },
   "dependencies": {
     "admin-lte": "^2.3.2",
@@ -54,13 +54,16 @@
     "react-router": "^2.0.1",
     "redux": "^3.3.1",
     "redux-logger": "^2.6.1",
-    "redux-thunk": "^2.0.1",
+    "redux-thunk": "1",
     "reselect": "^2.2.1",
     "superagent": "^1.8.2"
   },
   "lint-staged": {
     "linters": {
-      "*.js": ["eslint --fix", "git add"],
+      "*.js": [
+        "eslint --fix",
+        "git add"
+      ],
       "../backend/**/*.py": "pipenv run pylint"
     }
   }
