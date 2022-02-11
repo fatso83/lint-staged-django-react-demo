@@ -6,6 +6,11 @@ outside of project directory.
 _This project was scaffolded using
 [`django-react-template`][django-react-template]._
 
+## Setup
+- Install `pipenv` if you do not have it (typically `apt install pipenv` or similar)
+- Run `pipenv install --dev`
+- `cd demo/frontend/ && npm install`
+
 ## Project structure
 
 The `demo` Django project has 2 appropriately named folders, `backend` and
